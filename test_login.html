@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Admin Login</title>
+</head>
+<body>
+    <h1>Test Hotel Admin Login</h1>
+    <form method="post" action="http://localhost:3000/sign-in">
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="admin@hotel.com" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" value="admin123" required>
+        </div>
+        <button type="submit">Sign In</button>
+    </form>
+    
+    <h2>Manual Test Instructions:</h2>
+    <ol>
+        <li>Go to <a href="http://localhost:3000/sign-in" target="_blank">http://localhost:3000/sign-in</a></li>
+        <li>Enter email: <strong>admin@hotel.com</strong></li>
+        <li>Enter password: <strong>admin123</strong></li>
+        <li>Click "Sign In to Admin Panel"</li>
+        <li>You should be redirected to the admin dashboard</li>
+    </ol>
+</body>
+</html>
